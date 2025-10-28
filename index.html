@@ -3,9 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <a href="student information.html">Student info</a>
-  <a href="registration.html">registration</a>
-  <a href="forms.html">Form</a>
   <title>Feedback Form</title>
   <style>
     /* General page styling */
@@ -14,10 +11,23 @@
       background-color: #f2f4f7;
       margin: 0;
       padding: 0;
+      height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+    }
+
+    /* Top links */
+    .top-links {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+    }
+    .top-links a {
+      margin-right: 12px;
+      color: #007BFF;
+      text-decoration: none;
+      font-weight: bold;
     }
 
     /* Form container */
@@ -86,6 +96,13 @@
   </style>
 </head>
 <body>
+
+  <!-- moved links from <head> to here -->
+  <nav class="top-links">
+    <a href="student information.html">Student info</a>
+    <a href="registration.html">Registration</a>
+    <a href="forms.html">Form</a>
+  </nav>
 
   <form action="feedback.php" method="post">
     <h2>Feedback Form</h2>
